@@ -23,9 +23,6 @@ public abstract class State {
     }
 
     final State tick(Cat cat) {
-        if(duration < 0)
-        	return this;
-
         // time goes by...
         t = t + 1;
 
