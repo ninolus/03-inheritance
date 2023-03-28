@@ -1,6 +1,7 @@
 package ohm.softa.a03.tests;
 
 import ohm.softa.a03.Cat;
+import ohm.softa.a03.SleepingState;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
