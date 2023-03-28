@@ -27,4 +27,8 @@ public abstract class State {
     }
 
     public abstract State successor(Cat cat);
+
+    public State feed(Cat cat) {
+        return new DigestingState(cat.getAwake() - this.getTime(), cat.getDigest());
+    }
 }

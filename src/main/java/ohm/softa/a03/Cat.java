@@ -44,7 +44,7 @@ public class Cat {
         logger.info("You feed the cat...");
 
         // change state and reset the timer
-        currentState = new DigestingState(digest, currentState.getTime() - digest); // todo: irgendwie geht das noch nicht
+        currentState = ((HungryState) currentState).feed(this); // todo: irgendwie geht das noch nicht
     }
 
     public boolean isAsleep() {
