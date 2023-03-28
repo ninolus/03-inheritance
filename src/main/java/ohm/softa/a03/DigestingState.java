@@ -11,6 +11,6 @@ public class DigestingState extends State{
     @Override
     public State successor(Cat cat) {
         logger.info("Getting in a playful mood!");
-        return new PlayfulState(remaingingAwakeTime);
+        return new PlayfulState(remaingingAwakeTime - cat.getDigest());
     }
 }
